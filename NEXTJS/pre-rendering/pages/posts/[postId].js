@@ -20,15 +20,28 @@ export async function getStaticPaths() {
     })
 
     return {
-        paths: paths,
-        fallback: false,
+        //paths: paths,
+        paths: [
+            {params: {postId: '1'}},
+            {params: {postId: '2'}},
+            {params: {postId: '3'}},
+        ],
+        fallback: 'blocking',
     }
 }
 
 export async function getStaticProps(context) {
     const { params } = context
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
+    const res = await fetch(
+        `https://jsonplaceholder.typicode.com/posts/${params.postId}`
+        )
     const data = await res.json()
+
+    if(!data.id) {
+        return {
+            notFound: true,
+        }
+    }
 
     return {
         props: {
