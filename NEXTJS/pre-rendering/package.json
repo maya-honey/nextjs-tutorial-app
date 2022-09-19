@@ -2,14 +2,16 @@
   "name": "pre-rendering",
   "version": "0.1.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server-json": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
+    "json-server": "^0.16.3",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
