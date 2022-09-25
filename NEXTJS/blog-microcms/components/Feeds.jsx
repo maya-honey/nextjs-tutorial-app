@@ -2,14 +2,14 @@ import Feed from "../components/Feed"
 import Link from "next/link"
 import css from "../styles/Feeds.module.css"
 
-export default function Feeds({blog}){
+export default function Feeds({post}){
     return(
         <ul className={css.ul}>
-            {blog.map((blog) => (
-                <Link href={`/${blog.id}`} passHref>
+            {post.map((post) => (
+                <Link href={`/${post.id}`} passHref>
                     <li>
                         <a>
-                            <Feed blog={blog}/>
+                            <Feed post={post}/>
                         </a>
                     </li>
                 </Link>

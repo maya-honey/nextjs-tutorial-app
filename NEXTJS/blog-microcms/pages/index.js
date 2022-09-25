@@ -4,23 +4,31 @@ import Head from "next/head"
 import Layout from "../components/Layout"
 import Feeds from "../components/Feeds"
 import css from "../styles/Home.module.css"
+import Categories from '../components/Categories'
 
-export default function Home({blog}) {
+
+export default function Home({post, cat}) {
   return (
     <Layout>
-      <Feeds blog={blog}/>
+      <Categories cats={cat}/>
+      <Feeds post={post}/>
     </Layout>
   )
 }
 
 export async function getStaticProps(){
-  const data = await client.get({
+  const post = await client.get({
     endpoint: "blog"
+  })
+
+  const cat = await client.get({
+    endpoint: "categories"
   })
 
   return{
     props:{
-      blog: data.contents,
+      post: post.contents,
+      cat: cat.contents,
     }
   }
 }

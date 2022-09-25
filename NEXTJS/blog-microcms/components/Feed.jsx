@@ -1,14 +1,14 @@
 import React from 'react'
 import css from '../styles/Feed.module.css'
 
-const Feed = React.forwardRef(({blog},  ref) => {
+const Feed = React.forwardRef(({post},  ref) => {
     return(
         <div className={css.Feed}>
             <div className={css.title}>
-                <h3>{blog.title}</h3>
+                <h3>{post.title}</h3>
             </div>
             <div className={css.cattag}>
-                <span className={css.cat}>{blog.cat}</span>
+                <span className={css.cat}>{post.cat.name}</span>
                 <span className={css.tag}>タグa</span>
                 <span className={css.tag}>タグb</span>
             </div>
