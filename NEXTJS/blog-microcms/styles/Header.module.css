@@ -1,0 +1,22 @@
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    background: #f3f3f3;
+    width:100%;
+    height: auto;
+}
+.header_ul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.header_ul>li{
+    border:1px solid black;
+    box-sizing: border-box;
+}
+.header_ul>li>a>p{
+    padding:30px 15px;
+    box-sizing: border-box;
+}

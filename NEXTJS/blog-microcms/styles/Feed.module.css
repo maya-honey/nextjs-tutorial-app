@@ -1,0 +1,38 @@
+.Feed{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    row-gap:15px;
+}
+
+.title>h3{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.cattag{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.cat{
+    background:black;
+    color:#fff;
+    font-weight: bold;
+    font-size:14px;
+    padding:3px 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tag{
+    font-size:14px;
+}
+
+.feedtxt{
+    font-size:16px;
+    line-height:120%;
+}
+
