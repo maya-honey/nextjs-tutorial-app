@@ -3,13 +3,17 @@ import Link from "next/link"
 import css from "../styles/Feeds.module.css"
 
 export default function Feeds({post}){
+    post.map(post => {
+        console.log(post)
+        console.log(`--------${post.title}`);
+    })
     return(
         <ul className={css.ul}>
             {post.map((post) => (
                 <Link href={`/${post.id}`} passHref>
-                    <li>
+                    <li key={post.id}>
                         <a>
-                            <Feed post={post}/>
+                            <Feed post={post} key={post.id}/>
                         </a>
                     </li>
                 </Link>

@@ -15,8 +15,10 @@
 .header_ul>li{
     border:1px solid black;
     box-sizing: border-box;
+    height: 80px;
 }
 .header_ul>li>a>p{
-    padding:30px 15px;
+    padding:0px 15px;
     box-sizing: border-box;
+    line-height: 80px;
 }

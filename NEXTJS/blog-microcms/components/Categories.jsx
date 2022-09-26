@@ -9,7 +9,7 @@ export default function Categories({cats}){
                     <Link href={`/category/${cats.id}`} passHref>
                         <li key={cats.id}>
                             <a href="">
-                                <span>{cats.name}</span>
+                                <span className={css.span}>{cats.name}</span>
                             </a>
                         </li>
                     </Link>

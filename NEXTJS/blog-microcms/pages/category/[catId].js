@@ -7,11 +7,11 @@ function Category({post, cat}) {
         if(post.cat.id === cat){
             return post
         }
-    })
+    }).filter(post => post)
     
     return(
         <Layout>
-            <Feeds post={post}/>
+            <Feeds post={data}/>
         </Layout>
     )
 }
@@ -38,9 +38,6 @@ export async function getStaticProps(context){
     const post = await client.get({
         endpoint: "blog",
     })
-
-    console.log(params)
-    console.log(post);
 
     return{
         props: {

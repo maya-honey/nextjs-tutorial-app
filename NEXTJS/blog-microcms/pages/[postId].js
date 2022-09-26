@@ -8,7 +8,7 @@ function Post({ post }) {
             <div className={css.article}>
                 <h1 className={css.title}>{post.title}</h1>
                 <div className={css.cattag}>
-                    <span className={css.cat}>{post.cat}</span>
+                    <span className={css.cat}>{post.cat.name}</span>
                     <span className={css.tag}>タグa</span>
                     <span className={css.tag}>タグb</span>
                 </div>
@@ -43,6 +43,7 @@ export async function getStaticProps(context){
         endpoint: "blog",
         contentId: params.postId
     })
+    console.log(data)
     return{
         props:{
             post: data,
