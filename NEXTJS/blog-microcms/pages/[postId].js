@@ -1,6 +1,6 @@
 import { client } from "../libs/client"
 import Layout from "../components/Layout";
-import css from "../styles/Post.module.css"
+import css from "../styles/PostId.module.css"
 
 function Post({ post }) {
     return(

@@ -3,10 +3,6 @@ import Link from "next/link"
 import css from "../styles/Feeds.module.css"
 
 export default function Feeds({post}){
-    post.map(post => {
-        console.log(post)
-        console.log(`--------${post.title}`);
-    })
     return(
         <ul className={css.ul}>
             {post.map((post) => (
