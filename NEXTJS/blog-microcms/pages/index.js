@@ -1,9 +1,7 @@
 
 import { client } from '../libs/client'
-import Head from "next/head"
 import Layout from "../components/Layout"
 import Feeds from "../components/Feeds"
-import css from "../styles/Home.module.css"
 import Categories from '../components/Categories'
 
 

@@ -1,0 +1,12 @@
+.PageNotFound{
+    height: calc(100vh - 160px);
+}
+.PageNotFound h2{
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+    padding:calc(50vh - 80px) 0 30px 0;
+}
+.PageNotFound p{
+    text-align:center;
+}

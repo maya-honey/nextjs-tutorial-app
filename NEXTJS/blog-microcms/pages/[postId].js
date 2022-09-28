@@ -4,7 +4,7 @@ import css from "../styles/PostId.module.css"
 
 function Post({ post }) {
     return(
-        <Layout>
+        <Layout title={post.title} desc={post.desc}>
             <div className={css.article}>
                 <h1 className={css.title}>{post.title}</h1>
                 <div className={css.cattag}>
