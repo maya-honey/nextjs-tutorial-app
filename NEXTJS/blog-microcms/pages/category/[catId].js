@@ -1,3 +1,4 @@
+import { validateConfig } from "next/dist/server/config-shared";
 import Feeds from "../../components/Feeds";
 import Layout from "../../components/Layout";
 import { client } from "../../libs/client";
@@ -11,7 +12,7 @@ function Category({post, cat}) {
     }).filter(post => post)
     
     return(
-        <Layout>
+        <Layout title={cat.name} desc={`${cat.name}カテゴリーの記事一覧ページ`}>
             <h2 className={css.h2}>{cat.name}の記事一覧</h2>
             <Feeds post={data}/>
         </Layout>
