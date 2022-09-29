@@ -16,6 +16,7 @@ export default function Pagination({max_num = 7, page_name= "sample"}) {
             }
         }
     }
+    
 
     const create_nation = () => {
         if(max_num < 5){
