@@ -1,6 +1,8 @@
 import React from 'react'
 import css from '../styles/Feed.module.css'
 
+//React.forwardRefは子コンポーネントにrefを渡す機能
+//Feeds→Feedへrefを渡してる
 const Feed = React.forwardRef(({post},  ref) => {
     return(
         <div className={css.Feed}>

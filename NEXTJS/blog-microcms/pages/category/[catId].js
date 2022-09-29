@@ -1,4 +1,4 @@
-import { validateConfig } from "next/dist/server/config-shared";
+
 import Feeds from "../../components/Feeds";
 import Layout from "../../components/Layout";
 import { client } from "../../libs/client";

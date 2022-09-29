@@ -1,9 +1,11 @@
 import Feed from "../components/Feed"
+import Pagination from "../components/Pagination"
 import Link from "next/link"
 import css from "../styles/Feeds.module.css"
 
 export default function Feeds({post}){
     return(
+        <>
         <ul className={css.ul}>
             {post.map((post) => (
                 <Link href={`/${post.id}`} passHref>
@@ -15,5 +17,7 @@ export default function Feeds({post}){
                 </Link>
             ))}
         </ul>
+        <Pagination/>
+        </>
     )
 }

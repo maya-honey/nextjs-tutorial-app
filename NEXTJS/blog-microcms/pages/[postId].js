@@ -43,7 +43,7 @@ export async function getStaticProps(context){
         endpoint: "blog",
         contentId: params.postId
     })
-    console.log(data)
+    
     return{
         props:{
             post: data,
