@@ -27,6 +27,8 @@ export async function getStaticProps(){
     props:{
       post: post.contents,
       cat: cat.contents,
-    }
+    },
+    //ISR
+    revalidate: 10,
   }
 }

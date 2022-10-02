@@ -50,6 +50,8 @@ export async function getStaticProps(context){
         props: {
             post: post.contents,
             cat: cat,
-        }
+        },
+        //ISR
+        revalidate: 10
     }
 }
