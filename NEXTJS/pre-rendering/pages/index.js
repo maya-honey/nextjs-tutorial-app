@@ -19,6 +19,11 @@ function Home() {
           <a>Products</a>
         </Link>
       </li>
+      <li>
+        <Link href='/news'>
+          <a>News</a>
+        </Link>
+      </li>
     </ul>
     </>
   )
