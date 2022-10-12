@@ -20,13 +20,16 @@ function ArticleListByCategory({articles, category}) {
 export default ArticleListByCategory
 
 export async function getServerSideProps(context) {
-    const {params} = context
-    const res = await fetch(
-        `http://localhost:4000/news?category=${params.category}`
+    const {params, req, res, query} = context
+    const response = await fetch(
+        `http://localhost:3001/news?category=${params.category}`
     )
-    const data = await res.json()
+    const data = await response.json()
 
-    console.log(params);
+    
+    res.setHeader('Set-Cookie', ['name=Vishwash'])
+    console.log(req.headers.cookie);
+    console.log(query);
 
     return {
         props: {

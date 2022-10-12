@@ -36,7 +36,7 @@ export async function getStaticProps(context) {
     
     const { params } = context
     const res = await fetch(
-        `http://localhost:4000/products/${params.productId}`
+        `http://localhost:3001/products/${params.productId}`
         )
     const data = await res.json()
 
