@@ -1,4 +1,10 @@
 {
+    "dashboard": {
+        "posts": 5,
+        "likes": 100,
+        "followers": 20,
+        "following": 60
+    },
     "products": [
         {
             "id": 1,
@@ -22,19 +28,19 @@
     "news": [
         {
             "id": 1,
-            "title": "News Article 1",
+            "title": "After Change : News Article 1",
             "description": "Description 1 です",
             "category": "sports"
         },
         {
             "id": 2,
-            "title": "News Article 2",
+            "title": "After Change : News Article 2",
             "description": "Description 2",
             "category": "politics"
         },
         {
             "id": 3,
-            "title": "News Article 3",
+            "title": "After Change : News Article 3",
             "description": "Description 3",
             "category": "sports"
         }
