@@ -14,6 +14,7 @@ function Home() {
           <a>Posts</a>
         </Link>
       </li>
+      
       <li>
         <Link href='/products'>
           <a>Products</a>
